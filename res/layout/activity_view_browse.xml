@@ -1,0 +1,77 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    tools:context="com.example.shareaview.ViewBrowseActivity" >
+<LinearLayout 
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+   	    android:orientation="vertical">
+   	    
+   	    <LinearLayout 
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent" 
+   	    	android:layout_weight = "1">
+   	    	
+   	    	<TextView
+        		android:id="@+id/view_description"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"/>
+   	    	
+   	    </LinearLayout>
+   	    
+   	    <LinearLayout 
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent" 
+   	    	android:orientation="horizontal"
+   	    	android:layout_weight = "1">
+
+   	    	<TextView
+   	    	    android:id="@+id/view_lat"
+   	    	    android:layout_width="wrap_content"
+   	    	    android:layout_height="wrap_content"
+   	    	    android:layout_weight = "1" />
+
+   	    	<TextView
+   	    	    android:id="@+id/view_long"
+   	    	    android:layout_width="wrap_content"
+   	    	    android:layout_height="wrap_content"
+   	    	    android:layout_weight = "1" />
+
+   	    </LinearLayout>
+   	    
+   	    <LinearLayout 
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent" 
+   	    	android:orientation="horizontal"
+   	    	android:layout_weight = "1">
+
+   	    	<TextView
+   	    	    android:id="@+id/view_direction"
+   	    	    android:layout_width="wrap_content"
+   	    	    android:layout_height="wrap_content"
+   	    	    android:layout_weight = "1" />
+
+   	    	<TextView
+   	    	    android:id="@+id/user_direction"
+   	    	    android:layout_width="wrap_content"
+   	    	    android:layout_height="wrap_content"
+   	    	    android:layout_weight = "1" />
+
+   	    </LinearLayout>
+   	    
+   	    <LinearLayout 
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent" 
+   	    	android:layout_weight = "8">
+
+   	    	<ImageView
+   	    	    android:id="@+id/view_image"
+   	    	    android:layout_width="fill_parent"
+   	    	    android:layout_height="fill_parent" />
+
+   	    </LinearLayout>
+   	    
+</LinearLayout>
+</ScrollView>
