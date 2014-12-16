@@ -2,16 +2,16 @@
 <resources>
 
     <string name="app_name">Share A View</string>
-    <string name="capture_guide">Enter view description and then press the button to take a photo of the view and save the record</string>
+    <string name="capture_guide">Enter the view description and then press the below button to take a photo of it and submit your entry</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_capture_view">CaptureViewActivity</string>
-    <string name="capture_scene">Take Picture!</string>
+    <string name="title_activity_capture_view">Capture A View</string>
+    <string name="capture_scene">Capture View!</string>
     <string name="description_title">Description:</string>
-    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_map">Nearby Views</string>
     <string name="hello_world">Hello world!</string>
     <string name="to_capture_button">Capture A View</string>
     <string name="to_map_button">Nearby Views</string>
     <string name="API_key">AIzaSyDpbuyKCgfaihU-h9vpRFngP9_CmB6Zaeo</string>
-    <string name="title_activity_view_browse">ViewBrowseActivity</string>
+    <string name="title_activity_view_browse">View Details</string>
 
 </resources>

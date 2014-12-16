@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,37 +6,43 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.shareaview.MainActivity" >
+    tools:context="com.example.shareaview.MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="76dp"
-        android:text="@string/hello_world" />
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1" >
 
-    <Button
-        android:id="@+id/ToCapture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="78dp"
-        android:onClick="captureView"
-        android:text="@string/to_capture_button" />
+	    <Button
+	        android:id="@+id/ToCapture"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginBottom="8dp"
+	        android:onClick="captureView"
+	        android:text="@string/to_capture_button"
+	        android:textStyle="bold"
+	        android:typeface="serif"
+	        style="?android:attr/borderlessButtonStyle" />
+
+	</LinearLayout>
     
-    <Button
-        android:id="@+id/ToMap"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/ToCapture"
-        android:layout_marginTop="44dp"
-        android:onClick="showNearby"
-        android:text="@string/to_map_button" />
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1" >
 
-    
+	    <Button
+	        android:id="@+id/ToMap"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginTop="8dp"
+	        android:onClick="showNearby"
+	        android:text="@string/to_map_button"
+	        android:textStyle="bold"
+	        android:typeface="serif"
+	        style="?android:attr/borderlessButtonStyle" />
 
-</RelativeLayout>
+	</LinearLayout>
+
+</LinearLayout>
