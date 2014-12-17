@@ -2,6 +2,8 @@ package com.example.shareaview;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Calendar;
+import java.util.Date;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -86,6 +88,9 @@ public class CaptureViewActivity extends Activity {
 	
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		
+		Calendar c = Calendar.getInstance();
+		Date date = c.getTime();
 		
 		if (requestCode == REQUEST_TAKE_PHOTO && resultCode == RESULT_OK) {
 	    	ViewEntry viewRecord = new ViewEntry(locMod.getCurrentLocation(), 

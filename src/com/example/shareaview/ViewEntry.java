@@ -1,6 +1,7 @@
 package com.example.shareaview;
 
 import java.io.File;
+import java.util.Date;
 
 import com.google.android.gms.maps.model.LatLng;
 
@@ -10,6 +11,7 @@ public class ViewEntry {
 	private float direction;
 	private File image;
 	
+
 	public ViewEntry(LatLng coords, String description, float direction, File image)
 	{
 		this.coords = coords;

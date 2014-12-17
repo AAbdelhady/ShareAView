@@ -13,5 +13,6 @@
     <string name="to_map_button">Nearby Views</string>
     <string name="API_key">AIzaSyDpbuyKCgfaihU-h9vpRFngP9_CmB6Zaeo</string>
     <string name="title_activity_view_browse">View Details</string>
+    <string name="get_directions">Get Directions</string>
 
 </resources>

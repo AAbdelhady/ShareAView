@@ -97,6 +97,8 @@ public class MapActivity extends Activity implements OnMarkerClickListener {
 		openView.putExtra("ViewLatitude", String.valueOf(view.getCoords().latitude));
 		openView.putExtra("ViewLongitude", String.valueOf(view.getCoords().longitude));
 		openView.putExtra("ViewDirection", String.valueOf(view.getDirection()));
+		openView.putExtra("UserLatitude", String.valueOf(locMod.getCurrentLocation().latitude));
+		openView.putExtra("UserLongitude", String.valueOf(locMod.getCurrentLocation().longitude));
 		
 		if(view.getImage()!=null)
 		{

@@ -1,13 +1,18 @@
 package com.example.shareaview;
 
+import com.google.android.gms.maps.model.LatLng;
+
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -105,5 +110,19 @@ public class ViewBrowseActivity extends Activity {
 		{
 			userDir.setTextColor(Color.RED);
 		}
+	}
+	
+	public void getDirections(View view)
+	{
+		
+		String userLat = getIntent().getStringExtra("UserLatitude");
+		String userLng = getIntent().getStringExtra("UserLongitude");
+		
+		String viewLat = getIntent().getStringExtra("ViewLatitude");
+		String viewLng = getIntent().getStringExtra("ViewLongitude");
+		
+		Intent intent = new Intent(android.content.Intent.ACTION_VIEW, 
+			    Uri.parse("http://maps.google.com/maps?saddr="+userLat+","+userLng+"&daddr="+viewLat+","+viewLng));
+		startActivity(intent);
 	}
 }
