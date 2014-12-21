@@ -90,13 +90,14 @@ public class CaptureViewActivity extends Activity {
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		
 		Calendar c = Calendar.getInstance();
-		Date date = c.getTime();
+		Date dateCreated = c.getTime();
 		
 		if (requestCode == REQUEST_TAKE_PHOTO && resultCode == RESULT_OK) {
 	    	ViewEntry viewRecord = new ViewEntry(locMod.getCurrentLocation(), 
 	    			                             description, 
 	    			                             compassMod.getSensorReading(), 
-	    			                             photoFile);
+	    			                             photoFile,
+	    			                             dateCreated);
 	    	comMod.uploadView(viewRecord);
 	    	
 	    	Toast.makeText(this, "Your view has been recorded", Toast.LENGTH_SHORT).show();

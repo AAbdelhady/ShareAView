@@ -94,7 +94,7 @@ int drawable powered_by_google_dark 0x7f02001f
 int drawable powered_by_google_light 0x7f020020
 int id ToCapture 0x7f070018
 int id ToMap 0x7f070019
-int id action_settings 0x7f070022
+int id action_settings 0x7f070023
 int id book_now 0x7f070010
 int id buyButton 0x7f07000a
 int id buy_now 0x7f07000f
@@ -103,7 +103,7 @@ int id captureAndSave 0x7f070014
 int id classic 0x7f070011
 int id descriptionTitle 0x7f070017
 int id editText1 0x7f070016
-int id get_direction 0x7f070020
+int id get_direction 0x7f070021
 int id grayscale 0x7f070012
 int id guide 0x7f070015
 int id holo_dark 0x7f070005
@@ -121,9 +121,10 @@ int id selectionDetails 0x7f07000b
 int id strict_sandbox 0x7f070009
 int id terrain 0x7f070003
 int id user_direction 0x7f07001f
+int id view_date_Created 0x7f070020
 int id view_description 0x7f07001b
 int id view_direction 0x7f07001e
-int id view_image 0x7f070021
+int id view_image 0x7f070022
 int id view_lat 0x7f07001c
 int id view_long 0x7f07001d
 int id wrap_content 0x7f07000d

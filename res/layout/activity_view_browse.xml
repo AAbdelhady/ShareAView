@@ -14,7 +14,8 @@
     		android:layout_height="fill_parent" 
    	    	android:layout_weight = "1"
    	    	android:layout_marginTop="16dp"
-   	    	android:layout_marginBottom="16dp">
+   	    	android:layout_marginBottom="16dp"
+   	    	android:layout_marginLeft="16dp">
    	    	
    	    	<TextView
         		android:id="@+id/view_description"
@@ -28,7 +29,8 @@
     		android:layout_height="fill_parent" 
    	    	android:orientation="horizontal"
    	    	android:layout_weight = "1"
-   	    	android:layout_marginBottom="16dp">
+   	    	android:layout_marginBottom="16dp"
+   	    	android:layout_marginLeft="16dp">
 
    	    	<TextView
    	    	    android:id="@+id/view_lat"
@@ -48,7 +50,9 @@
     		android:layout_width="fill_parent"
     		android:layout_height="fill_parent" 
    	    	android:orientation="horizontal"
-   	    	android:layout_weight = "1">
+   	    	android:layout_weight = "1"
+   	    	android:layout_marginBottom="16dp"
+   	    	android:layout_marginLeft="16dp">
 
    	    	<TextView
    	    	    android:id="@+id/view_direction"
@@ -63,6 +67,19 @@
    	    	    android:layout_weight = "1" />
    	   </LinearLayout>
    	    	
+	   <LinearLayout 
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent" 
+   	    	android:layout_weight = "1"
+   	    	android:layout_marginLeft="16dp">
+   	    	
+   	    	<TextView
+        		android:id="@+id/view_date_Created"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"/>
+   	    	
+   	    </LinearLayout>   	    
+   	    
    	   <RelativeLayout 
     		android:layout_width="fill_parent"
     		android:layout_height="fill_parent" 
@@ -72,7 +89,7 @@
    	    	    android:id="@+id/get_direction"
         		android:layout_width="wrap_content"
         		android:layout_height="wrap_content"
-        		android:layout_marginTop="20dp"
+        		android:layout_marginTop="25dp"
         		android:layout_marginBottom="10dp"
         		android:text="@string/get_directions"
         		android:layout_centerHorizontal="true"

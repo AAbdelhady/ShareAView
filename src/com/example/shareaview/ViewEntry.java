@@ -10,14 +10,16 @@ public class ViewEntry {
 	private String description;
 	private float direction;
 	private File image;
+	private Date dateCreated;
 	
 
-	public ViewEntry(LatLng coords, String description, float direction, File image)
+	public ViewEntry(LatLng coords, String description, float direction, File image, Date dateCreated)
 	{
 		this.coords = coords;
 		this.description = description;
 		this.direction = direction;
 		this.image = (image);
+		this.dateCreated  = dateCreated;
 	}
 
 	public LatLng getCoords() {
@@ -36,5 +38,9 @@ public class ViewEntry {
 
 	public File getImage() {
 		return image;
+	}
+
+	public Date getDateCreated() {
+		return dateCreated;
 	}
 }

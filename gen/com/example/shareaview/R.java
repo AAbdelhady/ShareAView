@@ -411,7 +411,7 @@ containing a value of this type.
     public static final class id {
         public static final int ToCapture=0x7f070018;
         public static final int ToMap=0x7f070019;
-        public static final int action_settings=0x7f070022;
+        public static final int action_settings=0x7f070023;
         public static final int book_now=0x7f070010;
         public static final int buyButton=0x7f07000a;
         public static final int buy_now=0x7f07000f;
@@ -420,7 +420,7 @@ containing a value of this type.
         public static final int classic=0x7f070011;
         public static final int descriptionTitle=0x7f070017;
         public static final int editText1=0x7f070016;
-        public static final int get_direction=0x7f070020;
+        public static final int get_direction=0x7f070021;
         public static final int grayscale=0x7f070012;
         public static final int guide=0x7f070015;
         public static final int holo_dark=0x7f070005;
@@ -438,9 +438,10 @@ containing a value of this type.
         public static final int strict_sandbox=0x7f070009;
         public static final int terrain=0x7f070003;
         public static final int user_direction=0x7f07001f;
+        public static final int view_date_Created=0x7f070020;
         public static final int view_description=0x7f07001b;
         public static final int view_direction=0x7f07001e;
-        public static final int view_image=0x7f070021;
+        public static final int view_image=0x7f070022;
         public static final int view_lat=0x7f07001c;
         public static final int view_long=0x7f07001d;
         public static final int wrap_content=0x7f07000d;

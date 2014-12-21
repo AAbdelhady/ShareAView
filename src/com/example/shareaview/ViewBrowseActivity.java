@@ -41,6 +41,9 @@ public class ViewBrowseActivity extends Activity {
 		TextView viewDir = (TextView) findViewById(R.id.view_direction);
 		viewDir.setText("Direction to Face:\n\t"+getIntent().getStringExtra("ViewDirection"));
 		
+		TextView viewDate = (TextView) findViewById(R.id.view_date_Created);
+		viewDate.setText("Capture Date:\n\t"+getIntent().getStringExtra("ViewDateCreated"));
+		
 		userDir = (TextView) findViewById(R.id.user_direction);
 		
 		final ImageView viewImg = (ImageView) findViewById(R.id.view_image);
