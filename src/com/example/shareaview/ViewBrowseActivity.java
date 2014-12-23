@@ -7,9 +7,11 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.Point;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -56,8 +58,11 @@ public class ViewBrowseActivity extends Activity {
 		else
 		{
 			// Get the dimensions of the View
-	        int targetW = 1080/4;
-	        int targetH = 1920/4;
+			Display display = getWindowManager().getDefaultDisplay();
+			Point size = new Point();
+			display.getSize(size);
+	        int targetW = (size.x)/4;
+	        int targetH = (size.y)/4;
 			
 			// Get the dimensions of the bitmap
 	        BitmapFactory.Options bmOptions = new BitmapFactory.Options();
